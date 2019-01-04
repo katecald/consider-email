@@ -31,6 +31,6 @@ I time-boxed myself for this challenge and unfortunately got hung up on a some c
 1. Currently the code adds all emails into the `emailStore` in the order they are read from the file directory, and then subsequently sorts the threads by date. I would improve the Big O of the algorithm by implementing a binary-search-insert function that inserts new non-reply emails in the correct order and intelligently reorders threads upon inserting a reply.
 2. This incredibly optimistic code is written assuming it will never receive a remotely corrupted file in its life. I would add error-handling and additional checks to the data to prevent a silent crash if it were to receive corrupted data.
 3. I would write a test suite that tests the individual helper functions with different inputs to ensure their integrity.
-4. I would love to beef up the way the email information is stored an add a basic front-end visualization that allows you to see the emails and all their corresponding data presented in their sorted order. 
+4. I would love to beef up the way the email information is stored and add a basic front-end visualization that allows you to see the emails and all their corresponding data presented in their sorted order. 
 
 Overall this was a very interesting coding challenge--one that has left me wanting to continue working on it. Thanks for the opportunity to play around with email and think more complexly and granularly through this interface we all use every single day :)
