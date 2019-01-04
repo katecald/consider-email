@@ -1,5 +1,4 @@
 const fs = require('fs')
-// Container for sorted emails
 const emailStore = []
 
 process.stdin.on('data', () => {
@@ -39,7 +38,7 @@ process.stdin.on('data', () => {
     }
   })
 
-  // Sort the threads descending by most recent date
+  // Sort the threads into descending order by most recent date
   emailStore.sort((a, b) => b[b.length-1].date - a[a.length-1].date)
 
   console.log('Sorted Emails: ', emailStore)
