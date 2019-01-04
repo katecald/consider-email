@@ -1,5 +1,5 @@
 # consider-email challenge
-##TO RUN:
+## TO RUN:
 1. Clone the repo
 2. Run basic node call with `index.js` and folder of email files you wish to sort:
 ```
@@ -25,7 +25,7 @@ Sorted Emails:  [ [ { messageID: '<17@example>', date: 1510735286000 } ],
   [ { messageID: '<4@example>', date: 1509693154000 } ],
   [ { messageID: '<3@example>', date: 1509655375000 } ] ]
   ```
-##NOTES: 
+## NOTES: 
 
 I time-boxed myself for this challenge and unfortunately got hung up on a some command line and regex logistics, so there are many more things I would love to do in a world with more time:
 1. Currently the code adds all emails into the `emailStore` in the order they are read from the file directory, and then subsequently sorts the threads by date. I would improve the Big O of the algorithm by implementing a binary-search-insert function that inserts new non-reply emails in the correct order and intelligently reorders threads upon inserting a reply.
